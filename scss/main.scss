@@ -21,3 +21,22 @@ footer.footer{
     justify-content: space-around;
 
 }
+
+/* Carousel Home page */
+.c-item{
+    height: 480px;
+
+    .c-img{
+        height: 100%;
+        object-fit: cover;
+        filter:brightness(0.6);
+    }
+}
+
+.home-page-h1{
+    height: 200px;
+    width: 50%;
+    border: 1px solid black;
+    
+
+}
