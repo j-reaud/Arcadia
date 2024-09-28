@@ -12008,7 +12008,6 @@ footer.footer {
 }
 
 /* Ajoute d'une image.*/
-/* Ajoute d'une image.*/
 .hero-scene {
   position: relative;
   /* appliquer une hauter au div */
@@ -12043,4 +12042,22 @@ footer.footer {
 .map-cont .map-item {
   width: 100%;
   height: 100%;
+}
+
+/* Habitats */
+.habitats {
+  width: 100%;
+}
+
+.habittats-section {
+  height: 350px;
+}
+.habittats-section .habitats-image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.habitat-div {
+  background-color: rgba(196, 154, 108, 0.501);
 }/*# sourceMappingURL=main.css.map */

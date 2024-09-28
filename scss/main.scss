@@ -36,18 +36,18 @@ footer.footer{
 
     .i-image{
         height: 100%;
-        object-fit: cover;
-        
-
+        object-fit: cover;  
     }
 }
+
+
 
 /* pour justifier les text on peut l'ajouter pour d'autres texts.*/
 .text-justify{
     text-align: justify;
 }
 
-/* Ajoute d'une image.*/
+
 /* Ajoute d'une image.*/
 .hero-scene{
 
@@ -90,3 +90,23 @@ footer.footer{
         height: 100%;
     }
 }
+
+/* Habitats */
+
+.habitats{
+    width: 100%;
+}
+
+.habittats-section{
+    height: 350px;
+
+    .habitats-image{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.habitat-div{
+    background-color: rgba(196, 154, 108, 0.501);
+}
+
