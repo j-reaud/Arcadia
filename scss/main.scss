@@ -21,12 +21,18 @@ footer.footer{
 
 /* Carousel Home page */
 .c-item{
-    height: 480px;
+    height: 500px;
 
     .c-img{
         height: 100%;
         object-fit: cover;
         filter:brightness(0.5);
+    }
+    .c-image-employé{
+        height:100%;
+        object-fit: cover;
+        filter:brightness(0.5);
+
     }
 }
 
@@ -110,3 +116,93 @@ footer.footer{
     background-color: rgba(196, 154, 108, 0.501);
 }
 
+
+/* Ajoute d'une image.*/
+.hero-scene-habitats{
+
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top: 0; 
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/trees-4558229_1280.jpg);
+        background-size: cover;
+        filter: brightness(0.4) /* pour gérer la luminosité d'une image*/
+    }
+
+    *{
+        /* Positionner les élément devant le &::before*/
+        position: relative;
+    }
+
+    /* appliquer une hauter au div */
+    .hero-scene-content-habitats{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .hero-scene-content-text{
+        width: 40%;
+        
+
+    }
+    
+}
+
+/* Placing the title on top of a line*/
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.title-container h1 {
+   background-color: #ffff;
+    padding: 0 20px; /* Space around the text */
+    color: #009e9e; /* Your text color */
+    z-index: 1; /* Ensure the text appears above the line */
+}
+
+.title-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #afafaf; /* Line color */
+    top: 50%;
+    z-index: 0;
+}
+
+.title-container-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.title-container-b h1 {
+    background-color: rgb(226, 204, 182);
+    padding: 0 20px; /* Space around the text */
+    z-index: 1; /* Ensure the text appears above the line */
+}
+
+.title-container-b::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #afafaf; /* Line color */
+    top: 50%;
+    z-index: 0;
+}
