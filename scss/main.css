@@ -12147,4 +12147,71 @@ footer.footer {
   background-color: #afafaf; /* Line color */
   top: 50%;
   z-index: 0;
+}
+
+/* Marais */
+.hero-scene-marais {
+  position: relative;
+  /* appliquer une hauter au div */
+}
+.hero-scene-marais::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/marais/amphibian-7253136_1280.jpg);
+  background-size: cover;
+  filter: brightness(0.4);
+}
+.hero-scene-marais * {
+  /* Positionner les élément devant le &::before*/
+  position: relative;
+}
+.hero-scene-marais .hero-scene-content-marais {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-scene-marais .hero-scene-content-marais-text {
+  width: 40%;
+}
+
+.card-custom {
+  border: 1px solid #58641D;
+}
+
+/* Savane */
+/* Jungle */
+.hero-scene-jungle {
+  position: relative;
+  /* appliquer une hauter au div */
+}
+.hero-scene-jungle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/Capture\ d’écran\ 2024-09-29\ à\ 18.34.44.png);
+  background-size: cover;
+  filter: brightness(0.4);
+}
+.hero-scene-jungle * {
+  /* Positionner les élément devant le &::before*/
+  position: relative;
+}
+.hero-scene-jungle .hero-scene-content-jungle {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-scene-jungle .hero-scene-content-jungle-text {
+  width: 40%;
 }/*# sourceMappingURL=main.css.map */
