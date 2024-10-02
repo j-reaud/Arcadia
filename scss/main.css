@@ -12199,7 +12199,7 @@ footer.footer {
   height: 100%;
   background-image: url(../images/Capture\ d’écran\ 2024-09-29\ à\ 18.34.44.png);
   background-size: cover;
-  filter: brightness(0.4);
+  filter: brightness(0.5);
 }
 .hero-scene-jungle * {
   /* Positionner les élément devant le &::before*/
