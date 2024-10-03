@@ -12027,7 +12027,7 @@ footer.footer {
   height: 100%;
   background-image: url(../images/Capture\ d’écran\ 2024-09-17\ à\ 12.23.01.png);
   background-size: cover;
-  filter: brightness(0.3);
+  filter: brightness(0.3); /* pour gérer la luminosité d'une image*/
 }
 .hero-scene * {
   /* Positionner les élément devant le &::before*/
@@ -12082,7 +12082,7 @@ footer.footer {
   height: 100%;
   background-image: url(../images/trees-4558229_1280.jpg);
   background-size: cover;
-  filter: brightness(0.4);
+  filter: brightness(0.4); /* pour gérer la luminosité d'une image*/
 }
 .hero-scene-habitats * {
   /* Positionner les élément devant le &::before*/
@@ -12163,7 +12163,7 @@ footer.footer {
   height: 100%;
   background-image: url(../images/marais/amphibian-7253136_1280.jpg);
   background-size: cover;
-  filter: brightness(0.4);
+  filter: brightness(0.4); /* pour gérer la luminosité d'une image*/
 }
 .hero-scene-marais * {
   /* Positionner les élément devant le &::before*/
@@ -12199,7 +12199,7 @@ footer.footer {
   height: 100%;
   background-image: url(../images/Capture\ d’écran\ 2024-09-29\ à\ 18.34.44.png);
   background-size: cover;
-  filter: brightness(0.5);
+  filter: brightness(0.5); /* pour gérer la luminosité d'une image*/
 }
 .hero-scene-jungle * {
   /* Positionner les élément devant le &::before*/
@@ -12213,5 +12213,37 @@ footer.footer {
   justify-content: center;
 }
 .hero-scene-jungle .hero-scene-content-jungle-text {
+  width: 40%;
+}
+
+/* conexion page*/
+.hero-scene-conexion {
+  position: relative;
+  margin-bottom: 20px;
+  /* appliquer une hauter au div */
+}
+.hero-scene-conexion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/conexion/loginpic.png);
+  background-size: cover;
+  filter: brightness(0.5); /* pour gérer la luminosité d'une image*/
+}
+.hero-scene-conexion * {
+  /* Positionner les élément devant le &::before*/
+  position: relative;
+}
+.hero-scene-conexion .hero-scene-content-conexion {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-scene-conexion .hero-scene-content-conexion-text {
   width: 40%;
 }/*# sourceMappingURL=main.css.map */
