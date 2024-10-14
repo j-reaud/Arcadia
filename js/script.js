@@ -1,13 +1,32 @@
 
 const tokenCookieName = "accesstoken";
+const roleCookieName = "role";
+const signoutBtn = document.getElementById("signout-btn"); //pour gérer la déconnexion. 
+
+signoutBtn.addEventListener("click", signout); //quand on click sur "déconnexion l'user se déconnecte"
+
+// function pour récupérer le role de l'utilisateur
+function getRole(){
+    return getCookie(roleCookieName);
+}
+
+function signout(){ // quand l'utilisateur se déconnect on efface le cookie. 
+    eraseCookie(tokenCookieName);
+    eraseCookie("role");
+    window.location.reload(); //recharger la page. 
+}
+
+
 
 function setToken(token){
     setCookie(tokenCookieName, token, 7);
 }
 
-function getToken(){
+function getToken(){ //permet de returner le cookie du token
     return getCookie(tokenCookieName);
 }
+
+
 
 
 function setCookie(name,value,days) {
@@ -37,7 +56,8 @@ function eraseCookie(name) {
 
 // Savoir si l'utilisateur est connecté ou pas: 
 function isConnected(){
-    if(getToken == null || getToken == undefined){
+    const token = getToken(); // obtenir le token
+    if(token === null || token === undefined){
         return false;
     }
     else{
@@ -45,9 +65,49 @@ function isConnected(){
     }
 }
 
-if(isConnected()){
-    alert("Je suis connecté");
-}
-else{
-    alert("Je ne suis pas connecté");
+
+/*
+disconnected
+connected (admin ou client)
+    - admin 
+    - client
+*/
+
+
+// afficher ou cacher des élements en fonctions si l'user est connecté ou pas. 
+function showAndHideElementsForRole(){
+    const userConnected = isConnected();
+    const role = getRole();
+
+    let allElementsToEdit = document.querySelectorAll('[data-show]');
+
+    //parcourir tous les éléments: 
+    allElementsToEdit.forEach(element => {
+        switch(element.dataset.show){ // ceci nous permet de récuperer tous les éléments d'un data attribute avec le nom "data-show"
+            case 'disconnected':
+                if(userConnected){ // si user connecté, masquer élément. 
+                    element.classList.add("d-none");
+                }
+                break;
+            case 'connected':
+                if(!userConnected){ // si user no connecté, masquer élément 
+                    element.classList.add("d-none");
+                }
+                break;
+            case 'admin':
+                if(!userConnected || role != "admin"){ // si user non connecté ou role n'est pas admin.
+                    element.classList.add("d-none");
+                }
+                break;
+            case 'client':
+                if(!userConnected || role != "client"){ // si user non connecté ou rol n'est pas client. 
+                    element.classList.add("d-none");
+                }
+                break;
+            
+        }
+    })
+
+
+
 }

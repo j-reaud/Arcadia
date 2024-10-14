@@ -15,8 +15,7 @@ function checkCredentials(){
         setToken(token);
 
         //placer le token en coockie:
-
-
+        setCookie(roleCookieName, "admin", 7);
         window.location.replace("/"); // ceci permet de rediriger l'utilisateur vers la page d'accueil.
     }
     else{
