@@ -46,6 +46,24 @@
 
 <section>
   <article>
+    <div class="container p-4 mt-5 mb-5 welcome-container">
+      <h2 class="text-center text-primary text-capitalize mb-4">welcome to arcadia</h2>
+      <div class="row row-cols-1 row-cols-lg-2  align-items-center">
+        <div class="col-6 i-section image-welcome">
+          <img src="/images/DALL·E 2024-11-10 07.49.10 - A vibrant zoo scene with various animals such as lions, giraffes, zebras, and colorful tropical birds in a naturalistic setting. The background includ.webp" class="w-100 i-image rounded" alt="giraffe">
+        </div>
+        <div class="col-6">
+          <p class="text-justify">Le zoo s'engage fermement dans une démarche écoresponsable, en prenant soin de réduire son impact environnemental tout en contribuant activement à la préservation de la biodiversité. Nous mettons en œuvre des pratiques durables telles que l'utilisation responsable de l'eau, le recyclage des déchets, et l'utilisation d'énergies renouvelables.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <hr>
+
+
+
+
+  <article>
     <div class="container p-4">
       <h2 class="text-center text-primary text-capitalize">éco responsable</h2>
       <div class="row row-cols-2 align-items-center">
@@ -73,36 +91,83 @@
       
   </article>
 
+  <!-- Cartes habitats -->
   <article>
-    <div class="container p-4">
-      <h2 class="text-center text-primary text-capitalize mb-3">Nos habitats</h2>
-      <div class="row row-cols-3 align-items-center">
-        <div class="col i-section">
-          <img src="/images/marais/alligator-8308723_1280.jpg" class="w-100 i-image rounded" alt="Aligator"> 
+    <div class="container pt-4 mt-5 mb-5">
+      <h2 class="text-center text-primary text-capitalize mb-3 fs-1">Nos Habitats</h2>
+      <div class="row row-cols-2 row-cols-lg-3">
+        <!--1er image -->
+        <div class="col p-3">
+          <div class="image-card text-white">
+            <img src="/images/lion-3372720_1280.jpg" class="rounded  w-100" alt="Leon">
+            <a href="/savane" class="titre-image text-white fw-bold fs-4" >Savane</a>
+          </div>
         </div>
-        <div class="col i-section">
-          <img src="/images/trees-4558229_1280.jpg" class="w-100 i-image rounded" alt="giraffe">
+
+        <!--2eme image -->
+        <div class="col p-3">
+          <div class="image-card text-white">
+            <img src="/images/marais/black-tern-4205941_1280.jpg" class="rounded  w-100" alt="Leon">
+            <a href="/marais" class="titre-image text-white fw-bold fs-4" >Marais</a>
+          </div>
         </div>
-        <div class="col i-section">
-          <img src="/images/trees-4558229_1280.jpg" class="w-100 i-image rounded" alt="giraffe">        
+
+        <!--3eme image -->
+        <div class="col p-3">
+          <div class="image-card text-white">
+            <img src="/images/jungle/monkey-7394077_1280.jpg" class="rounded  w-100" alt="Leon">
+            <a href="/jungle" class="titre-image text-white fw-bold fs-4 " >Jungle</a>
+          </div>
         </div>
       </div>
-      <div class="text-center pt-4">
-        <a href="#" class="btn btn-primary text-capitalize">voir plus</a>
+    </div>
+    <hr>
+  </article>
+
+  <article>
+    <div class="container">
+      <h2 class="text-center text-primary text-capitalize mb-3 fs-1 ">Vos avis</h2>
+      <div class="row row-cols-2 row-cols-lg-3">
+        <!-- First comment -->
+        <div class="col p-3">
+          <div class="border border-primary p-2 rounded">
+            <div class="text-capitalize fs-4 fw-bold">
+              <p>name</p>
+            </div>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam illum fuga veritatis iure ullam cupiditate expedita deserunt eligendi fugiat beatae, nemo nam, porro rerum at provident architecto perferendis cum?</p>
+          </div>
+        </div>
+        <!-- Second comment -->
+        <div class="col p-3">
+          <div class="border border-primary p-2 rounded">
+            <div class="text-capitalize fs-4 fw-bold">
+              <p>name</p>
+            </div>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam illum fuga veritatis iure ullam cupiditate expedita deserunt eligendi fugiat beatae, nemo nam, porro rerum at provident architecto perferendis cum?</p>
+          </div>
+        </div>
+        <!-- Third comment -->
+        <div class="col p-3">
+          <div class="border border-primary p-2 rounded">
+            <div class="text-capitalize fs-4 fw-bold">
+              <p>name</p>
+            </div>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam illum fuga veritatis iure ullam cupiditate expedita deserunt eligendi fugiat beatae, nemo nam, porro rerum at provident architecto perferendis cum?</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </article>
   <hr>
-  <article>
-    <div class="container p-4 map-cont">
-      <div class="col-1 map-item ">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1206969.321835593!2d-3.218880026052265!3d48.579232905651516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480fb38fd5df5933%3A0x23f241c31b5da661!2sVal%20sans%20Retour!5e0!3m2!1ses!2sfr!4v1726584252484!5m2!1ses!2sfr"  width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
   
+  <!-- Google Map -->
+  <article class="container align-items-center">
+  
+    <div class="col-1 map-item">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1206969.321835593!2d-3.218880026052265!3d48.579232905651516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480fb38fd5df5933%3A0x23f241c31b5da661!2sVal%20sans%20Retour!5e0!3m2!1ses!2sfr!4v1726584252484!5m2!1ses!2sfr"  width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="text-center"></iframe>
     </div>
-      
+    
   </article>
-
-  
-  
 </section>
+
